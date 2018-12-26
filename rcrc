@@ -1,1 +1,1 @@
-SYMLINK_DIRS="vim config rvm zsh"
+SYMLINK_DIRS="vim config zsh"
