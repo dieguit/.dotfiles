@@ -8,7 +8,9 @@ Plug 'tpope/vim-surround'
 Plug 'thinca/vim-localrc'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-abolish'
+" Tmux integrations
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'benmills/vimux'
 " Colorschemes
 Plug 'NLKNguyen/papercolor-theme'
 " Snippets
