@@ -1,0 +1,8 @@
+" Include configs
+source ~/.vim/plugins.vim
+source ~/.vim/config/base.vim
+source ~/.vim/config/ale.vim
+source ~/.vim/config/mappings.vim
+source ~/.vim/config/nerdtree.vim
+source ~/.vim/config/deoplete.vim
+source ~/.vim/config/easymotion.vim

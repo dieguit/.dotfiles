@@ -1,0 +1,5 @@
+init.vim
+plugged/
+
+*.swp
+*.swo
