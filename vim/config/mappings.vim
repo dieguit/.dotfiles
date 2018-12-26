@@ -1,9 +1,16 @@
 imap jk <Esc>
+
 " Buffer nav maps
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <c-h> <c-w>h<c-w>_
-map <c-l> <c-w>l<c-w>_
+" map <C-J> <C-W>j<C-W>_
+" map <C-K> <C-W>k<C-W>_
+" map <c-h> <c-w>h<c-w>_
+" map <c-l> <c-w>l<c-w>_
+let g:tmux_navigator_no_mappings = 1
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr><C-W>_
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr><C-W>_
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr><C-W>_
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr><C-W>_
+nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr><C-W>_
 
 " ALEFix run map
 nmap <leader>f <Plug>(ale_fix)
