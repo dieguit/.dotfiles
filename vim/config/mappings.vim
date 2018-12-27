@@ -23,4 +23,4 @@ nnoremap <leader><space> :nohlsearch<CR>
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vf :VimuxPromptCommand(bufname("%"))<CR>
+map <Leader>vf :VimuxPromptCommand(bufname("%"), 0)<CR>
