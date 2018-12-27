@@ -34,5 +34,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mvolkmann/vim-react'
+" Icons (always last)
+Plug 'ryanoasis/vim-devicons'
 " Initialize plugin system
 call plug#end()
