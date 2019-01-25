@@ -4,7 +4,7 @@
 [[ -f ~/.zsh/vimode ]] && source ~/.zsh/vimode
 
 # Plugins
-plugins=(git docker-compose)
+plugins=(git docker-compose vi-mode)
 
 # ZSH
 ZSH_THEME="powerlevel9k/powerlevel9k"
