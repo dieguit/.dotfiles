@@ -48,3 +48,8 @@ desktop.ini
 *~
 *#
 .tern-port
+
+# Per-project npm/yarn configs #
+################################
+.npmrc
+.yarnrc
