@@ -34,6 +34,13 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'mvolkmann/vim-react'
+" Typescript
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'ianks/vim-tsx', { 'for': 'typescript.tsx' }
+" Ruby / Rails
+Plug 'tpope/vim-rails'
+
 " Icons (always last)
 Plug 'ryanoasis/vim-devicons'
 " Initialize plugin system

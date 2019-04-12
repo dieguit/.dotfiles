@@ -1,7 +1,8 @@
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'typescript': ['eslint', 'tsserver'],
-\   'html': []
+\   'html': [],
+\   'ruby': ['rubocop']
 \  }
 
 let g:ale_linter_aliases = {
@@ -13,4 +14,5 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'typescript': ['eslint'],
 \   'typescriptreact': ['eslint'],
+\   'ruby': ['rubocop']
 \   }

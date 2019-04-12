@@ -15,20 +15,6 @@ tcs () {
 }
 
 # ------------------------------------
-# Git alias 
-# ------------------------------------
-alias gad="git add"
-alias gco="git commit"
-alias gch="git checkout"
-alias gst="git status"
-alias gpl="git pull"
-alias gps="git push"
-alias gf="git fetch"
-alias gfo="git fetch origin"
-alias gm="git merge"
-alias gmh="git merge FETCH_HEAD"
-alias gr="git rebase"
-# ------------------------------------
 # Docker alias and functions
 # ------------------------------------
 # Get latest container ID

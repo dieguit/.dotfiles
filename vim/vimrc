@@ -7,3 +7,8 @@ source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/deoplete.vim
 source ~/.vim/config/easymotion.vim
 source ~/.vim/config/devicons.vim
+source ~/.vim/config/highlight.vim
+
+" Stuff that need to be last -find proper way to do this
+" highlight xmlAttrib cterm=italic ctermfg=214
+" highlight Comment cterm=italic

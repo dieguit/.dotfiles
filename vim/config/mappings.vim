@@ -24,3 +24,8 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vf :call VimuxRunCommand(bufname("%"), 0)<CR>
+
+" Output the current syntax group
+nnoremap <f10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<cr>

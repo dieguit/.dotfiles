@@ -87,8 +87,9 @@ tabspaces: 8
 font:
   # Normal (roman) font face
   normal:
-    family: SauceCodePro Nerd Font Mono
-    style: Medium
+    #family: SauceCodePro Nerd Font Mono
+    family: DankMono Nerd Font
+    style: Regular
 
   # Bold font face
   bold:
@@ -97,8 +98,9 @@ font:
 
   # Italic font face
   italic:
-    family: SauceCodePro Nerd Font Mono
-    style: Medium Italic
+    #family: SauceCodePro Nerd Font Mono
+    family: DankMono Nerd Font
+    style: Italic
 
   # Point size
   size: 16.0

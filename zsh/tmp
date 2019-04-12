@@ -2,3 +2,12 @@
 # Temp
 # ------------------------------------
 export SAF_NPM_TOKEN=9edcee12-dbf5-4add-bed5-aa93c3c379c8
+
+# ------------------------------------
+# tmp alias / funcs
+# ------------------------------------
+mds () {
+  for i do
+    cp $i ../saf/$i
+  done
+}
