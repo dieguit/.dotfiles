@@ -23,8 +23,8 @@ alias vim=nvim
 # open Vim
 
 bindkey -M vicmd "^V" edit-command-line
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='vim -u NONE'
+export VISUAL='vim -u NONE'
 
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1

@@ -8,11 +8,13 @@ Plug 'tpope/vim-surround'
 Plug 'thinca/vim-localrc'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-abolish'
+Plug 'mileszs/ack.vim'
 " Tmux integrations
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 " Colorschemes
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'altercation/vim-colors-solarized'
 " Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'

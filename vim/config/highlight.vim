@@ -1,6 +1,6 @@
-highlight xmlAttrib cterm=italic ctermfg=208
-highlight Comment cterm=italic
-highlight Include cterm=italic
-highlight Statement cterm=italic
-highlight StorageClass cterm=italic
+highlight xmlAttrib cterm=italic ctermfg=166
+highlight Comment cterm=italic ctermfg=166
+" highlight Include cterm=italic ctermfg=160
+" highlight Statement cterm=italic ctermfg=160
+" highlight StorageClass cterm=italic ctermfg=160
 
