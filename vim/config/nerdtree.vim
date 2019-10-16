@@ -18,6 +18,9 @@ let g:NERDTreeShowHidden = 1
 " Remove bookmarks and help text from NERDTree
 let g:NERDTreeMinimalUI = 1
 
+" Hide the Nerdtree status line to avoid clutter
+let g:NERDTreeStatusline = ''
+
 " Custom icons for expandable/expanded directories
 " let g:NERDTreeDirArrowExpandable = '?'
 " let g:NERDTreeDirArrowCollapsible = '?'

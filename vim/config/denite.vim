@@ -42,20 +42,20 @@ call denite#custom#map('insert,normal', "<C-h>", '<denite:do_action:split>')
 "   prompt_highlight        - Specify color of prompt
 "   highlight_matched_char  - Matched characters highlight
 "   highlight_matched_range - matched range highlight
+"\ 'split': 'floating',
 let s:denite_options = {'default' : {
-\ 'split': 'floating',
+\ 'winheight': 6,
 \ 'start_filter': 1,
 \ 'auto_resize': 1,
 \ 'source_names': 'short',
-\ 'prompt': '?:',
+\ 'prompt': '>:',
 \ 'statusline': 0,
 \ 'highlight_matched_char': 'WildMenu',
 \ 'highlight_matched_range': 'Visual',
 \ 'highlight_window_background': 'Visual',
 \ 'highlight_filter_background': 'StatusLine',
 \ 'highlight_prompt': 'StatusLine',
-\ 'winrow': 1,
-\ 'vertical_preview': 1
+\ 'winrow': 1
 \ }}
 
 " Loop through denite options and enable them

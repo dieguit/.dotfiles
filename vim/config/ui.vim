@@ -21,7 +21,6 @@ set splitbelow
 " Don't dispay mode in command line (airilne already shows it)
 set noshowmode
 
-
 " coc.nvim color changes
 hi! link CocErrorSign WarningMsg
 hi! link CocWarningSign Number

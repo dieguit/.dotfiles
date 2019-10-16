@@ -9,6 +9,7 @@ source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/easymotion.vim
 source ~/.vim/config/devicons.vim
 source ~/.vim/config/ui.vim
+source ~/.vim/config/airline.vim
 source ~/.vim/config/highlight.vim
 
 " Reload icons after init source
