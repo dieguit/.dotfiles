@@ -1,4 +1,4 @@
-set foldmethod=syntax "syntax highlighting items specify folds
+set foldmethod=manual "syntax highlighting items specify folds
 set foldlevelstart=99 "start file with all folds opened
 
 let javaScript_fold=1         " JavaScript

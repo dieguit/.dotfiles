@@ -19,3 +19,8 @@ let g:tern_map_keys = 1
  
 " Do not show file split after renaming
 let g:tern_show_loc_after_rename = 0
+
+let g:javascript_plugin_jsdoc = 1
+
+" === javascript-libraries-syntax === "
+let g:used_javascript_libs = 'ramda,lodash,jest'

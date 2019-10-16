@@ -1,0 +1,13 @@
+{
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+
+  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
+  "javascript.validate.enable": false,
+
+  "solargraph.diagnostics": true,
+  "solargraph.completion": true,
+  "solargraph.hover": true,
+  "solargraph.formatting": true,
+  "solargraph.references": true
+}

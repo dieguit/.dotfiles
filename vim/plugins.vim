@@ -1,49 +1,94 @@
-call plug#begin('~/.vim/plugged')
-" Base
-Plug 'w0rp/ale'
-Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim'
+" ============================================================================ "
+" ===                               PLUGINS                                === "
+" ============================================================================ "
+
+" check whether vim-plug is installed and install it if necessary
+let plugpath = expand('<sfile>:p:h'). '/autoload/plug.vim'
+if !filereadable(plugpath)
+    if executable('curl')
+        let plugurl = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+        call system('curl -fLo ' . shellescape(plugpath) . ' --create-dirs ' . plugurl)
+        if v:shell_error
+            echom "Error downloading vim-plug. Please install it manually.\n"
+            exit
+        endif
+    else
+        echom "vim-plug not installed. Please install it manually or install curl.\n"
+        exit
+    endif
+endif
+
+call plug#begin('~/.config/nvim/plugged')
+
+" === Editing Plugins === "
+" Trailing whitespace highlighting & automatic fixing
+Plug 'ntpeters/vim-better-whitespace'
+
+" auto-close plugin
+Plug 'rstacruz/vim-closer'
+
+" Comments and surrounds
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+
+" Enable local rc
 Plug 'thinca/vim-localrc'
+
+" Improved motion in Vim
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-abolish'
-Plug 'mileszs/ack.vim'
-" Tmux integrations
+
+" Emmet
+Plug 'mattn/emmet-vim'
+
+" Intellisense Engine
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+
+" Tmux/Neovim movement integration
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'benmills/vimux'
-" Colorschemes
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'altercation/vim-colors-solarized'
-" Snippets
+
+" Denite - Fuzzy finding, buffer management
+Plug 'Shougo/denite.nvim'
+
+" Ultisnips
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-" Autocomplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"Plug 'ervandew/supertab'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
-" File nav
-Plug 'kien/ctrlp.vim'
+" ES2015 code snippets
+Plug 'epilande/vim-es2015-snippets'
+" React code snippets (Optional)
+Plug 'epilande/vim-react-snippets'
+
+" Print function signatures in echo area
+Plug 'Shougo/echodoc.vim'
+
+" === Git Plugins === "
+" Enable git changes to be shown in sign column
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" === Javascript Plugins === "
+" Generate JSDoc commands based on function signature
+Plug 'heavenshell/vim-jsdoc'
+
+" === Syntax Highlighting === "
+" Syntax highlighting for javascript libraries
+Plug 'othree/javascript-libraries-syntax.vim'
+
+" Improved syntax highlighting and indentation
+" Plug 'othree/yajs.vim'
+Plug 'sheerun/vim-polyglot'
+
+" === UI === "
+" File explorer
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" Interface
-Plug 'trevordmiller/nova-vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'nathanaelkane/vim-indent-guides'
-" Javascript
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'mvolkmann/vim-react'
-" Typescript
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-Plug 'ianks/vim-tsx', { 'for': 'typescript.tsx' }
-" Ruby / Rails
-Plug 'tpope/vim-rails'
 
-" Icons (always last)
+" Colorscheme
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'altercation/vim-colors-solarized'
+
+" Icons
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 " Initialize plugin system
 call plug#end()

@@ -4,11 +4,6 @@ let mapleader=" "
 let maplocalleader = " "
 set clipboard=unnamedplus
 
-set t_Co=256   " This is may or may not needed.
-let g:solarized_visibility="low"
-let g:solarized_hitrail=1
-colorscheme solarized
-set background=light
 
 let g:node_host_prog = '/Users/dieguit/.nvm/versions/node/v10.16.0/bin/neovim-node-host'
 
@@ -38,3 +33,6 @@ let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 let g:ale_lint_delay = 300
+
+let g:echodoc#enable_at_startup = 1
+let g:signify_sign_delete = '-'

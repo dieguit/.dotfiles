@@ -1,0 +1,12 @@
+{
+  "actions": {
+    "%2FUsers%2Fdieguit%2Fprojects%2Fsaf%2Fsaf-ops": [
+      "as"
+    ]
+  },
+  "commands": {
+    "%2FUsers%2Fdieguit%2Fprojects%2Fsciencelogic%2Fap2-client%2Fpackages%2Fsl-em7-application-map": [
+      "goto"
+    ]
+  }
+}
