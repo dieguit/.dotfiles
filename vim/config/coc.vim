@@ -1,7 +1,7 @@
 " === Coc.nvim === "
 
 " Use `:F` to format current buffer
-command! -nargs=0 F :call CocCommand eslint.executeAutofix
+command! F CocCommand eslint.executeAutofix
 " with prettier -> command! -nargs=0 F :call CocAction('format')
 
 "Close preview window when completion is done.

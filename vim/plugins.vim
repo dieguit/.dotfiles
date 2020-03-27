@@ -82,8 +82,8 @@ Plug 'sheerun/vim-polyglot'
 
 " === UI === "
 " File explorer
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'scrooloose/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Colorscheme
 Plug 'NLKNguyen/papercolor-theme'
@@ -94,8 +94,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Icons
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Plug 'ryanoasis/vim-devicons'
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Initialize plugin system
 call plug#end()

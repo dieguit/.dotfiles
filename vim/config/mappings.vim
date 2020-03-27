@@ -72,8 +72,8 @@ endfunction
 "  <leader>n - Toggle NERDTree on/off
 "  <leader>f - Opens current file location in NERDTree
 
-nmap <leader>n :NERDTreeToggle<CR>
-nmap <leader>f :NERDTreeFind<CR>
+" nmap <leader>n :NERDTreeToggle<CR>
+" nmap <leader>f :NERDTreeFind<CR>
 
 "   <Space> - PageDown
 "   -       - PageUp
@@ -119,6 +119,9 @@ let g:coc_snippet_next = '<C-l>'
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" coc explorer
+:nmap <space>e :CocCommand explorer<CR>
 
 " === vim-better-whitespace === "
 "   <leader>y - Automatically remove trailing whitespace
