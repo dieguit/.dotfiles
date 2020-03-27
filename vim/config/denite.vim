@@ -44,7 +44,7 @@ call denite#custom#map('insert,normal', "<C-h>", '<denite:do_action:split>')
 "   highlight_matched_range - matched range highlight
 "\ 'split': 'floating',
 let s:denite_options = {'default' : {
-\ 'winheight': 6,
+\ 'winheight': 10,
 \ 'start_filter': 1,
 \ 'auto_resize': 1,
 \ 'source_names': 'short',
@@ -55,6 +55,7 @@ let s:denite_options = {'default' : {
 \ 'highlight_window_background': 'Visual',
 \ 'highlight_filter_background': 'StatusLine',
 \ 'highlight_prompt': 'StatusLine',
+\ 'vertical_preview': 1,
 \ 'winrow': 1
 \ }}
 

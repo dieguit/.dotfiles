@@ -31,6 +31,9 @@ Plug 'rstacruz/vim-closer'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
+" Search for, substitute, abbreviate and coerce
+Plug 'tpope/vim-abolish'
+
 " Enable local rc
 Plug 'thinca/vim-localrc'
 
