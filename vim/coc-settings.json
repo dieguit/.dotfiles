@@ -1,11 +1,10 @@
 {
+  "coc.preferences.jumpCommand": "split",
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
 
   "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
   "javascript.validate.enable": false,
-  "prettier.formatterPriority": -1,
-  "prettier.printWidth": 0,
 
   "solargraph.diagnostics": true,
   "solargraph.completion": true,
@@ -47,10 +46,10 @@
   "explorer.width": 40,
   "explorer.file.showHiddenFiles": true,
   "explorer.icon.enableNerdfont": true,
-  "explorer.file.column.git.icon.mixed": "*",
-  "explorer.file.column.git.icon.modified": "",
-  "explorer.file.column.git.icon.untracked": "",
+  "explorer.file.column.git.icon.mixed": "",
+  "explorer.file.column.git.icon.added": "",
+  "explorer.file.column.git.icon.untracked": "",
   "explorer.file.column.git.icon.deleted": "",
-  "explorer.file.column.git.icon.added": "",
-  //"explorer.file.column.git.icon.unmodified": "  ",
+  "explorer.file.column.git.icon.modified": "",
+  //"explorer.file.column.git.icon.modified": "",
 }

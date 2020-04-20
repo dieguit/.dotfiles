@@ -1,3 +1,4 @@
 explorer
 eslint.executeAutofix
+tsserver.organizeImports
 tsserver.goToProjectConfig

@@ -25,7 +25,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'ntpeters/vim-better-whitespace'
 
 " auto-close plugin
-Plug 'rstacruz/vim-closer'
+"Plug 'rstacruz/vim-closer'
 
 " Comments and surrounds
 Plug 'tpope/vim-commentary'
@@ -51,6 +51,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Denite - Fuzzy finding, buffer management
 Plug 'Shougo/denite.nvim'
+Plug 'jremmen/vim-ripgrep'
 
 " Ultisnips
 Plug 'SirVer/ultisnips'
@@ -68,10 +69,6 @@ Plug 'Shougo/echodoc.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" === Javascript Plugins === "
-" Generate JSDoc commands based on function signature
-Plug 'heavenshell/vim-jsdoc'
-
 " === Syntax Highlighting === "
 " Syntax highlighting for javascript libraries
 Plug 'othree/javascript-libraries-syntax.vim'
@@ -81,10 +78,6 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'sheerun/vim-polyglot'
 
 " === UI === "
-" File explorer
-" Plug 'scrooloose/nerdtree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-
 " Colorscheme
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'altercation/vim-colors-solarized'

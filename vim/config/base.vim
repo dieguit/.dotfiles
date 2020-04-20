@@ -27,11 +27,7 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-
-" let g:ale_sign_error = '●' " Less aggressive than the default '>>'
-" let g:ale_sign_warning = '.'
-" let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
-" let g:ale_lint_delay = 300
+set diffopt+=vertical
 
 let g:echodoc#enable_at_startup = 1
 let g:signify_sign_delete = '-'

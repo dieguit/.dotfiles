@@ -68,6 +68,35 @@ function! s:denite_my_settings() abort
   \ denite#do_map('open_filter_buffer')
 endfunction
 
+" Global find/replace inside working directory
+function! FindReplace()
+  " figure out which directory we're in
+	let dir = expand('%:h')
+  " ask for patterns
+  call inputsave()
+  let find = input('Pattern: ')
+  call inputrestore()
+  let replace = input('Replacement: ')
+  call inputrestore()
+  " are you sure?
+  let confirm = input('WARNING: About to replace ' . find . ' with ' . replace . ' in ' . dir . '/**/* (y/n):')
+  " clear echoed message
+  :redraw
+  if confirm == 'y'
+    " find with rigrep (populate quickfix )
+    :silent exe 'Rg ' . find
+    " use cfdo to substitute on all quickfix files
+    :silent exe 'cfdo %s/' . find . '/' . replace . '/g | update'
+    " close quickfix window
+    :silent exe 'cclose'
+    :echom('Replaced ' . find . ' with ' . replace . ' in all files in ' . dir )
+  else
+    :echom('Find/Replace Aborted :(')
+    return
+  endif
+endfunction
+:nnoremap <Leader>fr :call FindReplace()<CR>
+
 " === Nerdtree shorcuts === "
 "  <leader>n - Toggle NERDTree on/off
 "  <leader>f - Opens current file location in NERDTree
@@ -85,6 +114,9 @@ nmap <silent> <leader>dd <Plug>(coc-definition)
 nmap <silent> <leader>dt <Plug>(coc-type-definition)
 nmap <silent> <leader>dr <Plug>(coc-references)
 nmap <silent> <leader>di <Plug>(coc-implementation)
+
+"inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <cr> "\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
