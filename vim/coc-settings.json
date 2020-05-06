@@ -5,6 +5,10 @@
 
   "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
   "javascript.validate.enable": false,
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["javascript"],
+  },
 
   "solargraph.diagnostics": true,
   "solargraph.completion": true,

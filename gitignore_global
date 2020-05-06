@@ -49,6 +49,7 @@ desktop.ini
 *~
 *#
 .tern-port
+node_modules/
 
 # Per-project npm/yarn configs #
 ################################

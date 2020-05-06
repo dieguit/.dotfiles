@@ -11,6 +11,7 @@ let g:netrw_liststyle = 3
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
 set tabstop=2
+set mouse=a
 set shiftwidth=2
 set softtabstop=0
 set expandtab smarttab
