@@ -8,6 +8,7 @@
   "snippets.extends": {
     "javascriptreact": ["javascript"],
     "typescriptreact": ["javascript"],
+    "typescript": ["javascript"],
   },
 
   "solargraph.diagnostics": true,

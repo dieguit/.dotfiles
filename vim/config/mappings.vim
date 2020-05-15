@@ -115,6 +115,8 @@ nmap <silent> <leader>dt <Plug>(coc-type-definition)
 nmap <silent> <leader>dr <Plug>(coc-references)
 nmap <silent> <leader>di <Plug>(coc-implementation)
 
+nmap <silent> <leader>a <CR>
+
 "inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 inoremap <silent><expr> <cr> "\<CR>\<c-r>=coc#on_enter()\<CR>"
 

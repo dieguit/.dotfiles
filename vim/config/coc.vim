@@ -25,3 +25,13 @@ set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Add `:Fold` command to fold current buffer.
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+" Applying codeAction to the selected region.
+" Example: `<leader>aap` for current paragraph
+nmap <leader>a  <Plug>(coc-codeaction-selected)
