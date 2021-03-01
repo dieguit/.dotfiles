@@ -1,4 +1,7 @@
 explorer
 eslint.executeAutofix
 tsserver.organizeImports
+tsserver.executeAutofix
+solargraph.environment
+solargraph.config
 tsserver.goToProjectConfig

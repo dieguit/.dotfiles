@@ -5,10 +5,6 @@ export ZSH=/Users/dieguit/.oh-my-zsh
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 export HOMEBREW_GITHUB_API_TOKEN=f6dfe29c8a3b9f5c78e73842f8baf15cdc55f2f6
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.

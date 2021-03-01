@@ -1,8 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/dieguit/.dotfiles/vim'
+let g:netrw_dirhist_1='/Users/dieguit/.dotfiles/config/fish'
+let g:netrw_dirhist_0='/Users/dieguit/.dotfiles/vim'
+let g:netrw_dirhist_9='/Users/dieguit/.dotfiles'
+let g:netrw_dirhist_8='/Users/dieguit/projects/badoc/app/api-rails'
+let g:netrw_dirhist_7='/Users/dieguit/.dotfiles'
 let g:netrw_dirhist_6='/Users/dieguit/projects/sciencelogic/ap2-client/packages/business-application-services/src/components/ApplicationComponentCriteria'
 let g:netrw_dirhist_5='/Users/dieguit/projects/sciencelogic/ap2-client/packages/business-application-services/src/components'
 let g:netrw_dirhist_4='/Users/dieguit/projects/sc-battle-planner/api'
 let g:netrw_dirhist_3='/Users/dieguit/.dotfiles/vim'
-let g:netrw_dirhist_2='/Users/dieguit/.dotfiles/vim/config'
-let g:netrw_dirhist_1='/Users/dieguit/.dotfiles/vim'

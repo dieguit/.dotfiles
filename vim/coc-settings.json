@@ -2,13 +2,16 @@
   "coc.preferences.jumpCommand": "split",
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
+  "suggest.timeout": 5000,
 
+  "eslint.autoFixOnSave": true,
   "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
-  "javascript.validate.enable": false,
+  "javascript.validate.enable": true,
+
   "snippets.extends": {
     "javascriptreact": ["javascript"],
     "typescriptreact": ["javascript"],
-    "typescript": ["javascript"],
+    "typescript": ["javascript"]
   },
 
   "solargraph.diagnostics": true,
@@ -16,9 +19,9 @@
   "solargraph.hover": true,
   "solargraph.formatting": true,
   "solargraph.references": true,
+  "solargraph.autoformat": true,
 
   "suggest.languageSourcePriority": 99,
-  "suggest.timeout": 500,
   "suggest.snippetIndicator": " \ue796",
   "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",
@@ -55,6 +58,6 @@
   "explorer.file.column.git.icon.added": "",
   "explorer.file.column.git.icon.untracked": "",
   "explorer.file.column.git.icon.deleted": "",
-  "explorer.file.column.git.icon.modified": "",
+  "explorer.file.column.git.icon.modified": ""
   //"explorer.file.column.git.icon.modified": "",
 }

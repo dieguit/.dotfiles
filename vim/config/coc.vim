@@ -34,4 +34,5 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+"nmap <leader>a  <Plug>(coc-codeaction-selected)
+command! CA CocAction

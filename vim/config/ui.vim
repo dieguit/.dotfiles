@@ -60,6 +60,6 @@ augroup END
 " Change highlight group of preview window when open
 function! Handle_Win_Enter()
   if &previewwindow
-    setlocal winhighlight=Normal:MarkdownError
+  ntpeters/vim-better-whitespace  setlocal winhighlight=Normal:MarkdownError
   endif
 endfunction

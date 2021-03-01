@@ -22,7 +22,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " === Editing Plugins === "
 " Trailing whitespace highlighting & automatic fixing
-Plug 'ntpeters/vim-better-whitespace'
+"Plug 'ntpeters/vim-better-whitespace'
 
 " auto-close plugin
 "Plug 'rstacruz/vim-closer'
@@ -44,7 +44,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'
 
 " Intellisense Engine
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Tmux/Neovim movement integration
 Plug 'christoomey/vim-tmux-navigator'
@@ -62,7 +62,7 @@ Plug 'epilande/vim-es2015-snippets'
 Plug 'epilande/vim-react-snippets'
 
 " Print function signatures in echo area
-Plug 'Shougo/echodoc.vim'
+"Plug 'Shougo/echodoc.vim'
 
 " === Git Plugins === "
 " Enable git changes to be shown in sign column
@@ -71,13 +71,18 @@ Plug 'tpope/vim-fugitive'
 
 " === Syntax Highlighting === "
 " Syntax highlighting for javascript libraries
-Plug 'othree/javascript-libraries-syntax.vim'
+"Plug 'othree/javascript-libraries-syntax.vim'
 
 " Improved syntax highlighting and indentation
 " Plug 'othree/yajs.vim'
 Plug 'sheerun/vim-polyglot'
 
 " === UI === "
+
+Plug 'mhinz/vim-startify'
+" Smooth scrolling
+Plug 'psliwka/vim-smoothie'
+
 " Colorscheme
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'altercation/vim-colors-solarized'
@@ -89,6 +94,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Icons
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" Auto-imports for non-tsserver compatible projects
+Plug 'galooshi/vim-import-js'
 
 " Initialize plugin system
 call plug#end()
