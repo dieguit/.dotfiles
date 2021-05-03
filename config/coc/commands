@@ -1,5 +1,5 @@
-explorer
 eslint.executeAutofix
+explorer
 tsserver.organizeImports
 tsserver.executeAutofix
 solargraph.environment

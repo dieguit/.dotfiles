@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/plugged')
 " === Editing Plugins === "
 " Trailing whitespace highlighting & automatic fixing
 "Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-sensible'
 
 " auto-close plugin
 "Plug 'rstacruz/vim-closer'
@@ -83,9 +84,13 @@ Plug 'mhinz/vim-startify'
 " Smooth scrolling
 Plug 'psliwka/vim-smoothie'
 
+" Preview colors -> requires golang
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+
 " Colorscheme
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
 
 " Customized vim status line
 Plug 'vim-airline/vim-airline'
