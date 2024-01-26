@@ -1,0 +1,49 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+let mapleader = " "
+set scrolloff=5
+set incsearch
+set visualbell
+map Q gq
+set ideajoin
+set clipboard+=unnamed
+set clipboard+=ideaput
+set relativenumber
+set number
+set surround
+
+set ideamarks
+set easymotion
+let g:EasyMotion_override_acejump = 0
+let g:EasyMotion_do_mapping = 0
+
+set NERDTree
+map <c-h> :NERDTreeFocus<CR>
+map <c-n> :NERDTreeToggle<CR>
+
+map <c-z> :action ToggleDistractionFreeMode<CR>
+map <leader>s <Plug>(easymotion-s2)
+map gh <Action>(QuickJavaDoc)
+map cl <Action>(ShowErrorDescription)
+map <leader>gc <Action>(CommentByLineComment)
+map <leader>/ <Action>(CommentByLineComment)
+map gr <Action>(FindUsages)
+map gp <Action>(QuickImplementations)
+map ca <Action>(ShowIntentionActions)
+map <leader>ra <Action>(RenameElement)
+map <leader>fa <Action>(GotoAction)
+map <leader>fo <Action>(RecentFiles)
+map <leader>ff <Action>(GotoFile)
+map <leader>fw <Action>(TextSearchAction)
+map <leader>fm <Action>(ActivateBookmarksToolWindow)
+
+map <s-TAB> <Action>(PreviousTab)
+map <TAB> <Action>(NextTab)
+map <leader>x <Action>(CloseContent)
+map <leader>X <Action>(CloseAllEditors)
+map <c-o> <Action>(Forward)
+map <c-i> <Action>(Back)

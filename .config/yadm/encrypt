@@ -1,0 +1,5 @@
+.ssh/*.key
+.ssh/*.pem
+.config/fish/conf.d/github.fish
+.config/fish/conf.d/flow.fish
+.gnupg/
